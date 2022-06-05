@@ -181,6 +181,11 @@ nav.show {
   position: absolute;
 }
 
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: medium;
+}
+
 .slider-title {
   display: none;
 }
