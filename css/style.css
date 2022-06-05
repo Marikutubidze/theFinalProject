@@ -1,5 +1,5 @@
 :root {
-  --main-clr: #000000d0;
+  --main-clr: #000000;
   --accent-clr: rgb(176, 35, 35);
   --white: #ffffffc0;
   --form-bgr-clr: #0000005b;
@@ -14,9 +14,8 @@
   --b-circle: 50%;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-  font-family: "montserrat", roboto;
+  font-family: "Roboto", sans-serif;
   background-color: var(--main-clr);
   padding-bottom: var(--ff-m);
 }
@@ -137,7 +136,7 @@ nav.show {
   font-size: var(--ff-m);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent-clr);
+  color: var(--white);
   padding-bottom: var(--section-pd);
 }
 
@@ -267,29 +266,10 @@ nav.show {
   border: 1px solid var(--white);
 }
 
-.form-element::-webkit-input-placeholder,
-#description::-webkit-input-placeholder {
-  color: var(--white);
-}
-
-.form-element::-moz-placeholder,
-#description::-moz-placeholder {
-  color: var(--white);
-}
-
-.form-element:-ms-input-placeholder,
-#description:-ms-input-placeholder {
-  color: var(--white);
-}
-
-.form-element::-ms-input-placeholder,
-#description::-ms-input-placeholder {
-  color: var(--white);
-}
-
 .form-element::placeholder,
 #description::placeholder {
   color: var(--white);
+  font-family: "Raleway", sans-serif;
 }
 
 .form-element {
@@ -317,6 +297,109 @@ nav.show {
 .fa-location-arrow {
   margin-left: var(--text-mg);
   font-size: var(--ff-m);
+}
+
+/* guarantees list  */
+
+.guarantee-h {
+  text-align: center;
+  padding-top: var(--section-pd);
+  font-size: var(--ff-m);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.g-item > img {
+  width: 100px;
+  height: 100%;
+  margin-bottom: var(--text-mg);
+}
+
+.Guarantee-container {
+  padding-top: var(--section-pd);
+  padding-bottom: var(--section-pd);
+}
+
+.Guarantee-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Guarantee-container li {
+  width: 100%;
+  margin-bottom: var(--section-pd);
+}
+.Guarantee-container .g-item {
+  width: 60%;
+  border: 2px solid var(--white);
+  border-radius: var(--b-rad);
+  padding: 50px 40px;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  min-height: 300px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Guarantee-container .fn_title {
+  font-size: var(--ff-m);
+  font-weight: 500;
+  margin-bottom: var(--text-mg);
+}
+.Guarantee-container .line {
+  display: block;
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  background-color: var(--white);
+  top: 0;
+  left: 50%;
+  margin-left: -75px;
+  transition: all 0.3s ease;
+}
+.Guarantee-container .line:before,
+.Guarantee-container .line:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  transition: all 0.3s ease;
+  top: 0;
+}
+.Guarantee-container .line:before {
+  border-width: 0 10px 10px 0;
+  border-right-color: var(--white);
+  right: 100%;
+}
+.Guarantee-container .line:after {
+  border-width: 10px 10px 0 0;
+  border-top-color: var(--white);
+  left: 100%;
+}
+.Guarantee-container .g-item:hover {
+  border-color: var(--accent-clr);
+}
+.Guarantee-container .g-item:hover .line {
+  background-color: var(--accent-clr);
+}
+.Guarantee-container .g-item:hover .line:before {
+  border-right-color: var(--accent-clr);
+}
+.Guarantee-container .g-item:hover .line:after {
+  border-top-color: var(--accent-clr);
+}
+
+.g-item > h3 {
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
 }
 
 /* contact info */
