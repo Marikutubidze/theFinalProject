@@ -24,95 +24,99 @@
 </head>
 
 <body class="contact-body">
-    <header>
-        <div class="hamburger-wrapper">
-            <div class="hamburger-icon" id="icon">
-                <div class="icon-1" id="a"></div>
-                <div class="icon-2" id="b"></div>
-                <div class="icon-3" id="c"></div>
-                <div class="clear"></div>
+    <div class="main-wrapper">
+        <header>
+            <div class="hamburger-wrapper">
+                <div class="hamburger-icon" id="icon">
+                    <div class="icon-1" id="a"></div>
+                    <div class="icon-2" id="b"></div>
+                    <div class="icon-3" id="c"></div>
+                    <div class="clear"></div>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">
+                                Main
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" target="_blank">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <a href="index.html" target="_blank">
-                            Main
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" target="_blank">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
 
 
-    </header>
-    <section class="contact-section">
-        <h1 class="contact-h">Contact me!</h1>
-        <form class="contact-form" id="contact-form">
-            <div class="form-left">
-                <textarea name="description" id="description" placeholder="Description" required></textarea>
-            </div>
-            <div class="form-right">
-                <div>
-                    <input class="form-element" type="text" name="subject" id="subject" placeholder="Subject" required>
+        </header>
+        <section class="contact-section">
+            <h1 class="contact-h">Contact me!</h1>
+            <form class="contact-form" id="contact-form">
+                <div class="form-left">
+                    <textarea name="description" id="description" placeholder="Description" required></textarea>
                 </div>
-                <div>
-                    <input class="form-element" type="text" name="name-Surname" id="name-surn"
-                        placeholder="Name / Surname" required>
+                <div class="form-right">
+                    <div>
+                        <input class="form-element" type="text" name="subject" id="subject" placeholder="Subject"
+                            required>
+                    </div>
+                    <div>
+                        <input class="form-element" type="text" name="name-Surname" id="name-surn"
+                            placeholder="Name / Surname" required>
+                    </div>
+                    <div>
+                        <input class="form-element" type="email" id="emailInput" name="Email" placeholder="Email"
+                            required>
+                        <small id="emailErrorMsg" class="d-none">Please enter valid email</small>
+                    </div>
+                    <div class="btn-center">
+                        <button type="submit" id="submitBtn" class="send-btn">
+                            Send
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <input class="form-element" type="email" id="emailInput" name="Email" placeholder="Email" required>
-                    <small id="emailErrorMsg" class="d-none">Please enter valid email</small>
-                </div>
-                <div class="btn-center">
-                    <button type="submit" id="submitBtn" class="send-btn">
-                        Send
-                        <i class="fa-solid fa-location-arrow"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
+            </form>
 
-        <div class="contact-wrapper">
-            <div class="contact-mail">
-                <a href="mailto:photography@yahoo.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="mailto:photography@yahoo.com">
-                    <p>photography@yahoo.com</p>
-                </a>
+            <div class="contact-wrapper">
+                <div class="contact-mail">
+                    <a href="mailto:photography@yahoo.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="mailto:photography@yahoo.com">
+                        <p>photography@yahoo.com</p>
+                    </a>
+                </div>
+                <div class="contact-phone">
+                    <a href="tel:2347-927-5">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="tel:2347-927-5">
+                        <p>tell: 2347 927 5</p>
+                    </a>
+                </div>
             </div>
-            <div class="contact-phone">
-                <a href="tel:2347-927-5">
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-                <a href="tel:2347-927-5">
-                    <p>tell: 2347 927 5</p>
-                </a>
-            </div>
-        </div>
 
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95278.13240989158!2d44.7688137132302!3d41.732566091265554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2z4YOX4YOR4YOY4YOa4YOY4YOh4YOY!5e0!3m2!1ska!2sge!4v1650393472869!5m2!1ska!2sge"
-                width="700" height="290" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="map-link"></iframe>
-        </div>
-        <div>
-            <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div>
-        </div>
-    </section>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95278.13240989158!2d44.7688137132302!3d41.732566091265554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2z4YOX4YOR4YOY4YOa4YOY4YOh4YOY!5e0!3m2!1ska!2sge!4v1650393472869!5m2!1ska!2sge"
+                    width="700" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map-link"></iframe>
+            </div>
+            <div>
+                <div class="bg"></div>
+                <div class="bg bg2"></div>
+                <div class="bg bg3"></div>
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="ftr-wrapper">
             <div class="credits">
